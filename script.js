@@ -13,5 +13,8 @@ form.addEventListener('submit', ()=>{
             password.classList.add("error");
         })
     }
+    else {
+        form.submit(); 
+    }
 })
 
