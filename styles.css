@@ -28,6 +28,9 @@ input:focus{
     border-color:#1252b8
 }
 
+.error{
+    border-color: red; 
+}
 
 
 .image-container{
@@ -106,7 +109,7 @@ input:focus{
 }
 
 .button-container{
-    margin: 10px 40px; 
+    margin: 30px 40px; 
 }
 
 .button-container button{
