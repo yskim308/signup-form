@@ -32,7 +32,7 @@
                 <p>You <em>know</em> you want to</p>
             </div>
             <div class="form-container">
-                <form>
+                <form id="my-form">
                     <p>Let's do this!</p>
                     <ul>
                         <li>
@@ -47,28 +47,29 @@
                     <ul>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="userEmail">
+                            <input type="email" id="email" name="userEmail" required>
                         </li>
                         <li>
                             <label for="phone-number">Phone Number</label>
-                            <input type="number" id="phone-number" name="userPhoneNumber">
+                            <input type="number" id="phone-number" name="userPhoneNumber" required>
                         </li>
                     </ul>
                     <ul>
                         <li>
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="userPw">
+                            <input type="password" id="password" name="userPw" required>
+                            <div class="password-check"></div>
                         </li>
                         <li>
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" name="userConfirmPw">
+                            <input type="password" id="confirm-password" name="userConfirmPw" required>
                         </li>
                     </ul>
-                    <div class="button container">
-                        <button type="submit">Create Account</button>
-                        <p>Already have an account? <a>Log In</a></p>
-                    </div>
                 </form>
+            </div>
+            <div class="button-container">
+                <button type="submit" form="my-form">Create Account</button>
+                <p>Already have an account? <a href="index.html">Log In</a></p>
             </div>
         </div>
 
